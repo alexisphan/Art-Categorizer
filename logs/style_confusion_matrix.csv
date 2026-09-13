@@ -1,0 +1,730 @@
+true_label,predicted_label,count
+Abstract Expressionism,Abstract Expressionism,221
+Abstract Expressionism,Action painting,3
+Abstract Expressionism,Analytical Cubism,0
+Abstract Expressionism,Art Nouveau Modern,6
+Abstract Expressionism,Baroque,0
+Abstract Expressionism,Color Field Painting,39
+Abstract Expressionism,Contemporary Realism,1
+Abstract Expressionism,Cubism,11
+Abstract Expressionism,Early Renaissance,0
+Abstract Expressionism,Expressionism,25
+Abstract Expressionism,Fauvism,10
+Abstract Expressionism,High Renaissance,0
+Abstract Expressionism,Impressionism,3
+Abstract Expressionism,Mannerism Late Renaissance,2
+Abstract Expressionism,Minimalism,32
+Abstract Expressionism,Naive Art Primitivism,15
+Abstract Expressionism,New Realism,2
+Abstract Expressionism,Northern Renaissance,0
+Abstract Expressionism,Pointillism,1
+Abstract Expressionism,Pop Art,13
+Abstract Expressionism,Post Impressionism,9
+Abstract Expressionism,Realism,0
+Abstract Expressionism,Rococo,0
+Abstract Expressionism,Romanticism,1
+Abstract Expressionism,Symbolism,14
+Abstract Expressionism,Synthetic Cubism,1
+Abstract Expressionism,Ukiyo e,0
+Action painting,Abstract Expressionism,7
+Action painting,Action painting,3
+Action painting,Analytical Cubism,0
+Action painting,Art Nouveau Modern,0
+Action painting,Baroque,0
+Action painting,Color Field Painting,0
+Action painting,Contemporary Realism,0
+Action painting,Cubism,0
+Action painting,Early Renaissance,0
+Action painting,Expressionism,1
+Action painting,Fauvism,3
+Action painting,High Renaissance,0
+Action painting,Impressionism,0
+Action painting,Mannerism Late Renaissance,0
+Action painting,Minimalism,0
+Action painting,Naive Art Primitivism,0
+Action painting,New Realism,0
+Action painting,Northern Renaissance,0
+Action painting,Pointillism,0
+Action painting,Pop Art,0
+Action painting,Post Impressionism,0
+Action painting,Realism,0
+Action painting,Rococo,0
+Action painting,Romanticism,0
+Action painting,Symbolism,0
+Action painting,Synthetic Cubism,0
+Action painting,Ukiyo e,1
+Analytical Cubism,Abstract Expressionism,0
+Analytical Cubism,Action painting,0
+Analytical Cubism,Analytical Cubism,11
+Analytical Cubism,Art Nouveau Modern,0
+Analytical Cubism,Baroque,0
+Analytical Cubism,Color Field Painting,0
+Analytical Cubism,Contemporary Realism,0
+Analytical Cubism,Cubism,3
+Analytical Cubism,Early Renaissance,0
+Analytical Cubism,Expressionism,0
+Analytical Cubism,Fauvism,0
+Analytical Cubism,High Renaissance,0
+Analytical Cubism,Impressionism,0
+Analytical Cubism,Mannerism Late Renaissance,0
+Analytical Cubism,Minimalism,0
+Analytical Cubism,Naive Art Primitivism,0
+Analytical Cubism,New Realism,0
+Analytical Cubism,Northern Renaissance,0
+Analytical Cubism,Pointillism,0
+Analytical Cubism,Pop Art,0
+Analytical Cubism,Post Impressionism,0
+Analytical Cubism,Realism,0
+Analytical Cubism,Rococo,0
+Analytical Cubism,Romanticism,0
+Analytical Cubism,Symbolism,0
+Analytical Cubism,Synthetic Cubism,2
+Analytical Cubism,Ukiyo e,0
+Art Nouveau Modern,Abstract Expressionism,1
+Art Nouveau Modern,Action painting,0
+Art Nouveau Modern,Analytical Cubism,0
+Art Nouveau Modern,Art Nouveau Modern,386
+Art Nouveau Modern,Baroque,0
+Art Nouveau Modern,Color Field Painting,0
+Art Nouveau Modern,Contemporary Realism,2
+Art Nouveau Modern,Cubism,2
+Art Nouveau Modern,Early Renaissance,1
+Art Nouveau Modern,Expressionism,30
+Art Nouveau Modern,Fauvism,7
+Art Nouveau Modern,High Renaissance,1
+Art Nouveau Modern,Impressionism,13
+Art Nouveau Modern,Mannerism Late Renaissance,1
+Art Nouveau Modern,Minimalism,4
+Art Nouveau Modern,Naive Art Primitivism,33
+Art Nouveau Modern,New Realism,1
+Art Nouveau Modern,Northern Renaissance,5
+Art Nouveau Modern,Pointillism,1
+Art Nouveau Modern,Pop Art,9
+Art Nouveau Modern,Post Impressionism,48
+Art Nouveau Modern,Realism,21
+Art Nouveau Modern,Rococo,0
+Art Nouveau Modern,Romanticism,18
+Art Nouveau Modern,Symbolism,61
+Art Nouveau Modern,Synthetic Cubism,0
+Art Nouveau Modern,Ukiyo e,4
+Baroque,Abstract Expressionism,1
+Baroque,Action painting,0
+Baroque,Analytical Cubism,0
+Baroque,Art Nouveau Modern,6
+Baroque,Baroque,408
+Baroque,Color Field Painting,0
+Baroque,Contemporary Realism,0
+Baroque,Cubism,0
+Baroque,Early Renaissance,2
+Baroque,Expressionism,3
+Baroque,Fauvism,0
+Baroque,High Renaissance,26
+Baroque,Impressionism,3
+Baroque,Mannerism Late Renaissance,21
+Baroque,Minimalism,0
+Baroque,Naive Art Primitivism,14
+Baroque,New Realism,0
+Baroque,Northern Renaissance,7
+Baroque,Pointillism,0
+Baroque,Pop Art,0
+Baroque,Post Impressionism,1
+Baroque,Realism,33
+Baroque,Rococo,51
+Baroque,Romanticism,50
+Baroque,Symbolism,7
+Baroque,Synthetic Cubism,0
+Baroque,Ukiyo e,1
+Color Field Painting,Abstract Expressionism,20
+Color Field Painting,Action painting,0
+Color Field Painting,Analytical Cubism,0
+Color Field Painting,Art Nouveau Modern,0
+Color Field Painting,Baroque,0
+Color Field Painting,Color Field Painting,168
+Color Field Painting,Contemporary Realism,1
+Color Field Painting,Cubism,1
+Color Field Painting,Early Renaissance,0
+Color Field Painting,Expressionism,1
+Color Field Painting,Fauvism,1
+Color Field Painting,High Renaissance,0
+Color Field Painting,Impressionism,0
+Color Field Painting,Mannerism Late Renaissance,0
+Color Field Painting,Minimalism,39
+Color Field Painting,Naive Art Primitivism,1
+Color Field Painting,New Realism,0
+Color Field Painting,Northern Renaissance,0
+Color Field Painting,Pointillism,0
+Color Field Painting,Pop Art,0
+Color Field Painting,Post Impressionism,0
+Color Field Painting,Realism,0
+Color Field Painting,Rococo,0
+Color Field Painting,Romanticism,0
+Color Field Painting,Symbolism,1
+Color Field Painting,Synthetic Cubism,0
+Color Field Painting,Ukiyo e,0
+Contemporary Realism,Abstract Expressionism,0
+Contemporary Realism,Action painting,0
+Contemporary Realism,Analytical Cubism,0
+Contemporary Realism,Art Nouveau Modern,5
+Contemporary Realism,Baroque,0
+Contemporary Realism,Color Field Painting,2
+Contemporary Realism,Contemporary Realism,28
+Contemporary Realism,Cubism,1
+Contemporary Realism,Early Renaissance,0
+Contemporary Realism,Expressionism,5
+Contemporary Realism,Fauvism,0
+Contemporary Realism,High Renaissance,0
+Contemporary Realism,Impressionism,6
+Contemporary Realism,Mannerism Late Renaissance,0
+Contemporary Realism,Minimalism,2
+Contemporary Realism,Naive Art Primitivism,3
+Contemporary Realism,New Realism,0
+Contemporary Realism,Northern Renaissance,1
+Contemporary Realism,Pointillism,0
+Contemporary Realism,Pop Art,3
+Contemporary Realism,Post Impressionism,5
+Contemporary Realism,Realism,7
+Contemporary Realism,Rococo,0
+Contemporary Realism,Romanticism,1
+Contemporary Realism,Symbolism,2
+Contemporary Realism,Synthetic Cubism,0
+Contemporary Realism,Ukiyo e,0
+Cubism,Abstract Expressionism,10
+Cubism,Action painting,0
+Cubism,Analytical Cubism,7
+Cubism,Art Nouveau Modern,2
+Cubism,Baroque,0
+Cubism,Color Field Painting,1
+Cubism,Contemporary Realism,0
+Cubism,Cubism,181
+Cubism,Early Renaissance,0
+Cubism,Expressionism,29
+Cubism,Fauvism,18
+Cubism,High Renaissance,1
+Cubism,Impressionism,2
+Cubism,Mannerism Late Renaissance,0
+Cubism,Minimalism,3
+Cubism,Naive Art Primitivism,33
+Cubism,New Realism,1
+Cubism,Northern Renaissance,0
+Cubism,Pointillism,0
+Cubism,Pop Art,9
+Cubism,Post Impressionism,14
+Cubism,Realism,1
+Cubism,Rococo,0
+Cubism,Romanticism,0
+Cubism,Symbolism,4
+Cubism,Synthetic Cubism,13
+Cubism,Ukiyo e,0
+Early Renaissance,Abstract Expressionism,0
+Early Renaissance,Action painting,0
+Early Renaissance,Analytical Cubism,0
+Early Renaissance,Art Nouveau Modern,3
+Early Renaissance,Baroque,5
+Early Renaissance,Color Field Painting,0
+Early Renaissance,Contemporary Realism,0
+Early Renaissance,Cubism,0
+Early Renaissance,Early Renaissance,142
+Early Renaissance,Expressionism,4
+Early Renaissance,Fauvism,0
+Early Renaissance,High Renaissance,21
+Early Renaissance,Impressionism,0
+Early Renaissance,Mannerism Late Renaissance,3
+Early Renaissance,Minimalism,0
+Early Renaissance,Naive Art Primitivism,4
+Early Renaissance,New Realism,0
+Early Renaissance,Northern Renaissance,8
+Early Renaissance,Pointillism,0
+Early Renaissance,Pop Art,0
+Early Renaissance,Post Impressionism,1
+Early Renaissance,Realism,6
+Early Renaissance,Rococo,0
+Early Renaissance,Romanticism,6
+Early Renaissance,Symbolism,4
+Early Renaissance,Synthetic Cubism,0
+Early Renaissance,Ukiyo e,0
+Expressionism,Abstract Expressionism,37
+Expressionism,Action painting,0
+Expressionism,Analytical Cubism,0
+Expressionism,Art Nouveau Modern,24
+Expressionism,Baroque,3
+Expressionism,Color Field Painting,5
+Expressionism,Contemporary Realism,4
+Expressionism,Cubism,56
+Expressionism,Early Renaissance,0
+Expressionism,Expressionism,437
+Expressionism,Fauvism,84
+Expressionism,High Renaissance,2
+Expressionism,Impressionism,34
+Expressionism,Mannerism Late Renaissance,1
+Expressionism,Minimalism,5
+Expressionism,Naive Art Primitivism,60
+Expressionism,New Realism,2
+Expressionism,Northern Renaissance,3
+Expressionism,Pointillism,2
+Expressionism,Pop Art,15
+Expressionism,Post Impressionism,119
+Expressionism,Realism,16
+Expressionism,Rococo,0
+Expressionism,Romanticism,8
+Expressionism,Symbolism,72
+Expressionism,Synthetic Cubism,0
+Expressionism,Ukiyo e,3
+Fauvism,Abstract Expressionism,13
+Fauvism,Action painting,0
+Fauvism,Analytical Cubism,0
+Fauvism,Art Nouveau Modern,0
+Fauvism,Baroque,0
+Fauvism,Color Field Painting,1
+Fauvism,Contemporary Realism,0
+Fauvism,Cubism,10
+Fauvism,Early Renaissance,0
+Fauvism,Expressionism,20
+Fauvism,Fauvism,61
+Fauvism,High Renaissance,0
+Fauvism,Impressionism,3
+Fauvism,Mannerism Late Renaissance,0
+Fauvism,Minimalism,0
+Fauvism,Naive Art Primitivism,7
+Fauvism,New Realism,0
+Fauvism,Northern Renaissance,0
+Fauvism,Pointillism,0
+Fauvism,Pop Art,3
+Fauvism,Post Impressionism,21
+Fauvism,Realism,0
+Fauvism,Rococo,0
+Fauvism,Romanticism,0
+Fauvism,Symbolism,0
+Fauvism,Synthetic Cubism,0
+Fauvism,Ukiyo e,0
+High Renaissance,Abstract Expressionism,1
+High Renaissance,Action painting,0
+High Renaissance,Analytical Cubism,0
+High Renaissance,Art Nouveau Modern,0
+High Renaissance,Baroque,11
+High Renaissance,Color Field Painting,0
+High Renaissance,Contemporary Realism,0
+High Renaissance,Cubism,0
+High Renaissance,Early Renaissance,28
+High Renaissance,Expressionism,5
+High Renaissance,Fauvism,0
+High Renaissance,High Renaissance,116
+High Renaissance,Impressionism,0
+High Renaissance,Mannerism Late Renaissance,15
+High Renaissance,Minimalism,0
+High Renaissance,Naive Art Primitivism,2
+High Renaissance,New Realism,0
+High Renaissance,Northern Renaissance,9
+High Renaissance,Pointillism,0
+High Renaissance,Pop Art,0
+High Renaissance,Post Impressionism,0
+High Renaissance,Realism,4
+High Renaissance,Rococo,1
+High Renaissance,Romanticism,4
+High Renaissance,Symbolism,5
+High Renaissance,Synthetic Cubism,0
+High Renaissance,Ukiyo e,0
+Impressionism,Abstract Expressionism,11
+Impressionism,Action painting,0
+Impressionism,Analytical Cubism,0
+Impressionism,Art Nouveau Modern,34
+Impressionism,Baroque,3
+Impressionism,Color Field Painting,0
+Impressionism,Contemporary Realism,4
+Impressionism,Cubism,4
+Impressionism,Early Renaissance,0
+Impressionism,Expressionism,53
+Impressionism,Fauvism,3
+Impressionism,High Renaissance,2
+Impressionism,Impressionism,1190
+Impressionism,Mannerism Late Renaissance,0
+Impressionism,Minimalism,0
+Impressionism,Naive Art Primitivism,6
+Impressionism,New Realism,7
+Impressionism,Northern Renaissance,1
+Impressionism,Pointillism,55
+Impressionism,Pop Art,0
+Impressionism,Post Impressionism,253
+Impressionism,Realism,226
+Impressionism,Rococo,3
+Impressionism,Romanticism,34
+Impressionism,Symbolism,63
+Impressionism,Synthetic Cubism,0
+Impressionism,Ukiyo e,0
+Mannerism Late Renaissance,Abstract Expressionism,0
+Mannerism Late Renaissance,Action painting,0
+Mannerism Late Renaissance,Analytical Cubism,0
+Mannerism Late Renaissance,Art Nouveau Modern,1
+Mannerism Late Renaissance,Baroque,26
+Mannerism Late Renaissance,Color Field Painting,0
+Mannerism Late Renaissance,Contemporary Realism,0
+Mannerism Late Renaissance,Cubism,0
+Mannerism Late Renaissance,Early Renaissance,4
+Mannerism Late Renaissance,Expressionism,3
+Mannerism Late Renaissance,Fauvism,0
+Mannerism Late Renaissance,High Renaissance,27
+Mannerism Late Renaissance,Impressionism,0
+Mannerism Late Renaissance,Mannerism Late Renaissance,104
+Mannerism Late Renaissance,Minimalism,0
+Mannerism Late Renaissance,Naive Art Primitivism,0
+Mannerism Late Renaissance,New Realism,1
+Mannerism Late Renaissance,Northern Renaissance,11
+Mannerism Late Renaissance,Pointillism,0
+Mannerism Late Renaissance,Pop Art,0
+Mannerism Late Renaissance,Post Impressionism,1
+Mannerism Late Renaissance,Realism,2
+Mannerism Late Renaissance,Rococo,3
+Mannerism Late Renaissance,Romanticism,5
+Mannerism Late Renaissance,Symbolism,4
+Mannerism Late Renaissance,Synthetic Cubism,0
+Mannerism Late Renaissance,Ukiyo e,0
+Minimalism,Abstract Expressionism,6
+Minimalism,Action painting,1
+Minimalism,Analytical Cubism,0
+Minimalism,Art Nouveau Modern,0
+Minimalism,Baroque,0
+Minimalism,Color Field Painting,16
+Minimalism,Contemporary Realism,0
+Minimalism,Cubism,0
+Minimalism,Early Renaissance,0
+Minimalism,Expressionism,1
+Minimalism,Fauvism,0
+Minimalism,High Renaissance,0
+Minimalism,Impressionism,0
+Minimalism,Mannerism Late Renaissance,0
+Minimalism,Minimalism,151
+Minimalism,Naive Art Primitivism,0
+Minimalism,New Realism,0
+Minimalism,Northern Renaissance,0
+Minimalism,Pointillism,0
+Minimalism,Pop Art,4
+Minimalism,Post Impressionism,0
+Minimalism,Realism,0
+Minimalism,Rococo,0
+Minimalism,Romanticism,0
+Minimalism,Symbolism,1
+Minimalism,Synthetic Cubism,0
+Minimalism,Ukiyo e,2
+Naive Art Primitivism,Abstract Expressionism,2
+Naive Art Primitivism,Action painting,0
+Naive Art Primitivism,Analytical Cubism,0
+Naive Art Primitivism,Art Nouveau Modern,11
+Naive Art Primitivism,Baroque,0
+Naive Art Primitivism,Color Field Painting,0
+Naive Art Primitivism,Contemporary Realism,0
+Naive Art Primitivism,Cubism,4
+Naive Art Primitivism,Early Renaissance,1
+Naive Art Primitivism,Expressionism,18
+Naive Art Primitivism,Fauvism,12
+Naive Art Primitivism,High Renaissance,0
+Naive Art Primitivism,Impressionism,1
+Naive Art Primitivism,Mannerism Late Renaissance,0
+Naive Art Primitivism,Minimalism,1
+Naive Art Primitivism,Naive Art Primitivism,266
+Naive Art Primitivism,New Realism,0
+Naive Art Primitivism,Northern Renaissance,0
+Naive Art Primitivism,Pointillism,0
+Naive Art Primitivism,Pop Art,6
+Naive Art Primitivism,Post Impressionism,23
+Naive Art Primitivism,Realism,2
+Naive Art Primitivism,Rococo,0
+Naive Art Primitivism,Romanticism,3
+Naive Art Primitivism,Symbolism,8
+Naive Art Primitivism,Synthetic Cubism,0
+Naive Art Primitivism,Ukiyo e,1
+New Realism,Abstract Expressionism,0
+New Realism,Action painting,0
+New Realism,Analytical Cubism,0
+New Realism,Art Nouveau Modern,2
+New Realism,Baroque,0
+New Realism,Color Field Painting,0
+New Realism,Contemporary Realism,0
+New Realism,Cubism,0
+New Realism,Early Renaissance,0
+New Realism,Expressionism,5
+New Realism,Fauvism,0
+New Realism,High Renaissance,0
+New Realism,Impressionism,2
+New Realism,Mannerism Late Renaissance,0
+New Realism,Minimalism,0
+New Realism,Naive Art Primitivism,1
+New Realism,New Realism,16
+New Realism,Northern Renaissance,0
+New Realism,Pointillism,0
+New Realism,Pop Art,0
+New Realism,Post Impressionism,11
+New Realism,Realism,5
+New Realism,Rococo,1
+New Realism,Romanticism,0
+New Realism,Symbolism,3
+New Realism,Synthetic Cubism,0
+New Realism,Ukiyo e,0
+Northern Renaissance,Abstract Expressionism,0
+Northern Renaissance,Action painting,0
+Northern Renaissance,Analytical Cubism,0
+Northern Renaissance,Art Nouveau Modern,10
+Northern Renaissance,Baroque,13
+Northern Renaissance,Color Field Painting,0
+Northern Renaissance,Contemporary Realism,0
+Northern Renaissance,Cubism,0
+Northern Renaissance,Early Renaissance,12
+Northern Renaissance,Expressionism,6
+Northern Renaissance,Fauvism,0
+Northern Renaissance,High Renaissance,34
+Northern Renaissance,Impressionism,2
+Northern Renaissance,Mannerism Late Renaissance,9
+Northern Renaissance,Minimalism,0
+Northern Renaissance,Naive Art Primitivism,6
+Northern Renaissance,New Realism,0
+Northern Renaissance,Northern Renaissance,245
+Northern Renaissance,Pointillism,1
+Northern Renaissance,Pop Art,2
+Northern Renaissance,Post Impressionism,4
+Northern Renaissance,Realism,9
+Northern Renaissance,Rococo,1
+Northern Renaissance,Romanticism,23
+Northern Renaissance,Symbolism,6
+Northern Renaissance,Synthetic Cubism,0
+Northern Renaissance,Ukiyo e,0
+Pointillism,Abstract Expressionism,1
+Pointillism,Action painting,1
+Pointillism,Analytical Cubism,1
+Pointillism,Art Nouveau Modern,1
+Pointillism,Baroque,0
+Pointillism,Color Field Painting,0
+Pointillism,Contemporary Realism,0
+Pointillism,Cubism,1
+Pointillism,Early Renaissance,0
+Pointillism,Expressionism,0
+Pointillism,Fauvism,0
+Pointillism,High Renaissance,0
+Pointillism,Impressionism,2
+Pointillism,Mannerism Late Renaissance,0
+Pointillism,Minimalism,0
+Pointillism,Naive Art Primitivism,0
+Pointillism,New Realism,0
+Pointillism,Northern Renaissance,0
+Pointillism,Pointillism,64
+Pointillism,Pop Art,0
+Pointillism,Post Impressionism,2
+Pointillism,Realism,1
+Pointillism,Rococo,0
+Pointillism,Romanticism,0
+Pointillism,Symbolism,1
+Pointillism,Synthetic Cubism,0
+Pointillism,Ukiyo e,0
+Pop Art,Abstract Expressionism,17
+Pop Art,Action painting,1
+Pop Art,Analytical Cubism,0
+Pop Art,Art Nouveau Modern,10
+Pop Art,Baroque,0
+Pop Art,Color Field Painting,13
+Pop Art,Contemporary Realism,0
+Pop Art,Cubism,7
+Pop Art,Early Renaissance,0
+Pop Art,Expressionism,4
+Pop Art,Fauvism,5
+Pop Art,High Renaissance,0
+Pop Art,Impressionism,0
+Pop Art,Mannerism Late Renaissance,0
+Pop Art,Minimalism,26
+Pop Art,Naive Art Primitivism,22
+Pop Art,New Realism,0
+Pop Art,Northern Renaissance,0
+Pop Art,Pointillism,1
+Pop Art,Pop Art,102
+Pop Art,Post Impressionism,1
+Pop Art,Realism,0
+Pop Art,Rococo,0
+Pop Art,Romanticism,1
+Pop Art,Symbolism,7
+Pop Art,Synthetic Cubism,1
+Pop Art,Ukiyo e,1
+Post Impressionism,Abstract Expressionism,9
+Post Impressionism,Action painting,0
+Post Impressionism,Analytical Cubism,0
+Post Impressionism,Art Nouveau Modern,19
+Post Impressionism,Baroque,2
+Post Impressionism,Color Field Painting,3
+Post Impressionism,Contemporary Realism,4
+Post Impressionism,Cubism,21
+Post Impressionism,Early Renaissance,0
+Post Impressionism,Expressionism,54
+Post Impressionism,Fauvism,45
+Post Impressionism,High Renaissance,0
+Post Impressionism,Impressionism,119
+Post Impressionism,Mannerism Late Renaissance,0
+Post Impressionism,Minimalism,4
+Post Impressionism,Naive Art Primitivism,27
+Post Impressionism,New Realism,1
+Post Impressionism,Northern Renaissance,1
+Post Impressionism,Pointillism,20
+Post Impressionism,Pop Art,3
+Post Impressionism,Post Impressionism,547
+Post Impressionism,Realism,36
+Post Impressionism,Rococo,1
+Post Impressionism,Romanticism,4
+Post Impressionism,Symbolism,42
+Post Impressionism,Synthetic Cubism,0
+Post Impressionism,Ukiyo e,2
+Realism,Abstract Expressionism,10
+Realism,Action painting,0
+Realism,Analytical Cubism,0
+Realism,Art Nouveau Modern,58
+Realism,Baroque,35
+Realism,Color Field Painting,0
+Realism,Contemporary Realism,2
+Realism,Cubism,4
+Realism,Early Renaissance,0
+Realism,Expressionism,51
+Realism,Fauvism,2
+Realism,High Renaissance,6
+Realism,Impressionism,172
+Realism,Mannerism Late Renaissance,3
+Realism,Minimalism,3
+Realism,Naive Art Primitivism,30
+Realism,New Realism,12
+Realism,Northern Renaissance,4
+Realism,Pointillism,6
+Realism,Pop Art,3
+Realism,Post Impressionism,98
+Realism,Realism,858
+Realism,Rococo,16
+Realism,Romanticism,143
+Realism,Symbolism,87
+Realism,Synthetic Cubism,0
+Realism,Ukiyo e,1
+Rococo,Abstract Expressionism,0
+Rococo,Action painting,0
+Rococo,Analytical Cubism,0
+Rococo,Art Nouveau Modern,0
+Rococo,Baroque,35
+Rococo,Color Field Painting,0
+Rococo,Contemporary Realism,0
+Rococo,Cubism,0
+Rococo,Early Renaissance,0
+Rococo,Expressionism,2
+Rococo,Fauvism,0
+Rococo,High Renaissance,3
+Rococo,Impressionism,2
+Rococo,Mannerism Late Renaissance,5
+Rococo,Minimalism,0
+Rococo,Naive Art Primitivism,0
+Rococo,New Realism,1
+Rococo,Northern Renaissance,3
+Rococo,Pointillism,0
+Rococo,Pop Art,0
+Rococo,Post Impressionism,1
+Rococo,Realism,9
+Rococo,Rococo,211
+Rococo,Romanticism,35
+Rococo,Symbolism,4
+Rococo,Synthetic Cubism,0
+Rococo,Ukiyo e,1
+Romanticism,Abstract Expressionism,2
+Romanticism,Action painting,0
+Romanticism,Analytical Cubism,0
+Romanticism,Art Nouveau Modern,27
+Romanticism,Baroque,49
+Romanticism,Color Field Painting,0
+Romanticism,Contemporary Realism,3
+Romanticism,Cubism,1
+Romanticism,Early Renaissance,7
+Romanticism,Expressionism,9
+Romanticism,Fauvism,0
+Romanticism,High Renaissance,10
+Romanticism,Impressionism,39
+Romanticism,Mannerism Late Renaissance,9
+Romanticism,Minimalism,0
+Romanticism,Naive Art Primitivism,14
+Romanticism,New Realism,2
+Romanticism,Northern Renaissance,9
+Romanticism,Pointillism,5
+Romanticism,Pop Art,0
+Romanticism,Post Impressionism,12
+Romanticism,Realism,139
+Romanticism,Rococo,63
+Romanticism,Romanticism,584
+Romanticism,Symbolism,66
+Romanticism,Synthetic Cubism,0
+Romanticism,Ukiyo e,0
+Symbolism,Abstract Expressionism,11
+Symbolism,Action painting,0
+Symbolism,Analytical Cubism,0
+Symbolism,Art Nouveau Modern,56
+Symbolism,Baroque,7
+Symbolism,Color Field Painting,1
+Symbolism,Contemporary Realism,1
+Symbolism,Cubism,4
+Symbolism,Early Renaissance,3
+Symbolism,Expressionism,34
+Symbolism,Fauvism,10
+Symbolism,High Renaissance,1
+Symbolism,Impressionism,24
+Symbolism,Mannerism Late Renaissance,4
+Symbolism,Minimalism,1
+Symbolism,Naive Art Primitivism,15
+Symbolism,New Realism,2
+Symbolism,Northern Renaissance,2
+Symbolism,Pointillism,7
+Symbolism,Pop Art,1
+Symbolism,Post Impressionism,21
+Symbolism,Realism,50
+Symbolism,Rococo,1
+Symbolism,Romanticism,36
+Symbolism,Symbolism,385
+Symbolism,Synthetic Cubism,0
+Symbolism,Ukiyo e,0
+Synthetic Cubism,Abstract Expressionism,0
+Synthetic Cubism,Action painting,0
+Synthetic Cubism,Analytical Cubism,0
+Synthetic Cubism,Art Nouveau Modern,0
+Synthetic Cubism,Baroque,0
+Synthetic Cubism,Color Field Painting,0
+Synthetic Cubism,Contemporary Realism,0
+Synthetic Cubism,Cubism,8
+Synthetic Cubism,Early Renaissance,0
+Synthetic Cubism,Expressionism,0
+Synthetic Cubism,Fauvism,0
+Synthetic Cubism,High Renaissance,0
+Synthetic Cubism,Impressionism,0
+Synthetic Cubism,Mannerism Late Renaissance,0
+Synthetic Cubism,Minimalism,2
+Synthetic Cubism,Naive Art Primitivism,0
+Synthetic Cubism,New Realism,0
+Synthetic Cubism,Northern Renaissance,0
+Synthetic Cubism,Pointillism,0
+Synthetic Cubism,Pop Art,0
+Synthetic Cubism,Post Impressionism,0
+Synthetic Cubism,Realism,0
+Synthetic Cubism,Rococo,0
+Synthetic Cubism,Romanticism,0
+Synthetic Cubism,Symbolism,1
+Synthetic Cubism,Synthetic Cubism,22
+Synthetic Cubism,Ukiyo e,0
+Ukiyo e,Abstract Expressionism,0
+Ukiyo e,Action painting,0
+Ukiyo e,Analytical Cubism,0
+Ukiyo e,Art Nouveau Modern,5
+Ukiyo e,Baroque,0
+Ukiyo e,Color Field Painting,0
+Ukiyo e,Contemporary Realism,0
+Ukiyo e,Cubism,0
+Ukiyo e,Early Renaissance,0
+Ukiyo e,Expressionism,2
+Ukiyo e,Fauvism,0
+Ukiyo e,High Renaissance,0
+Ukiyo e,Impressionism,0
+Ukiyo e,Mannerism Late Renaissance,0
+Ukiyo e,Minimalism,0
+Ukiyo e,Naive Art Primitivism,0
+Ukiyo e,New Realism,0
+Ukiyo e,Northern Renaissance,0
+Ukiyo e,Pointillism,0
+Ukiyo e,Pop Art,1
+Ukiyo e,Post Impressionism,2
+Ukiyo e,Realism,1
+Ukiyo e,Rococo,0
+Ukiyo e,Romanticism,0
+Ukiyo e,Symbolism,2
+Ukiyo e,Synthetic Cubism,0
+Ukiyo e,Ukiyo e,159

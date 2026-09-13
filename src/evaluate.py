@@ -90,14 +90,30 @@ def main():
     pd.DataFrame(cm_rows).to_csv(cm_csv_path, index=False)
     print(f"Confusion matrix (long format, Tableau-ready) saved to: {cm_csv_path}")
 
-    fig_size = max(6, len(label_names) * 0.4)
+    n = len(label_names)
+    # Cap the figure size — for tasks with many classes (e.g. 978 artists),
+    # the previous uncapped formula (n * 0.4 inches) produced a
+    # tens-of-thousands-of-pixels image that needed more memory than most
+    # machines have, and wouldn't have been legible at any zoom level
+    # anyway. Above ~60 classes we also drop the per-class tick labels,
+    # since they'd just overlap into unreadable clutter — use the CSV
+    # (long-format, sortable/filterable) for detailed per-class inspection
+    # of large-class-count tasks instead.
+    fig_size = min(40, max(6, n * 0.4))
+    show_labels = n <= 60
+
     plt.figure(figsize=(fig_size, fig_size))
     plt.imshow(cm, cmap="Blues")
-    plt.title(f"Confusion Matrix — {args.task}")
+    plt.title(f"Confusion Matrix — {args.task} ({n} classes)")
     plt.colorbar()
-    tick_marks = range(len(label_names))
-    plt.xticks(tick_marks, label_names, rotation=90, fontsize=6)
-    plt.yticks(tick_marks, label_names, fontsize=6)
+    if show_labels:
+        tick_marks = range(n)
+        plt.xticks(tick_marks, label_names, rotation=90, fontsize=6)
+        plt.yticks(tick_marks, label_names, fontsize=6)
+    else:
+        print(f"  ({n} classes — skipping per-class tick labels in the PNG "
+              f"for legibility; use {args.task}_confusion_matrix.csv to "
+              f"look up specific classes.)")
     plt.xlabel("Predicted")
     plt.ylabel("True")
     plt.tight_layout()

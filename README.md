@@ -5,7 +5,8 @@ Pinned to the **[WikiArt dataset by steubk on Kaggle](https://www.kaggle.com/dat
 "new WikiArt dataset"). Three tasks on one shared pipeline:
 
 1. **Style classification** (27 style/movement classes)
-2. **Artist attribution** (129 artist classes, including "Unknown Artist")
+2. **Artist attribution** (900+ artist classes after rare-artist filtering —
+   confirmed against your actual download, which has 978 before filtering)
 3. **Genre classification** (~11 genre classes, including "Unknown Genre")
 
 > **Note on era/period classification**: the original version of this
@@ -24,17 +25,48 @@ Downloaded from Kaggle, this dataset unpacks to:
 <Style_1>/<artist-name_title-of-work>.jpg
 <Style_2>/...
 ...
-classes.csv     # filename, artist, genre, description, phash, width, height, genre_count, subset (no style column)
-wclasses.csv    # file, artist, genre, style   <- this is the one data_prep.py uses
+classes.csv     # filename, artist, genre, description, phash, width, height, genre_count, subset
+wclasses.csv    # file, artist, genre, style  (all three are integer class codes, no name lookup shipped)
 ```
 
 Confirmed via `--inspect` on the actual download: images are folder-per-style,
 2 levels deep, and neither CSV has a date/year column, so the "no dates in
-this dataset" note above is confirmed, not just anticipated. When both CSVs
-are present, `data_prep.py` scores each by how many of
-path/artist/style/genre it covers and picks `wclasses.csv` automatically
-(since `classes.csv` is missing `style` entirely) — you don't need to name
-it explicitly.
+this dataset" note above is confirmed, not just anticipated.
+
+`data_prep.py` gets each field from wherever it's actually reliable, not
+from a single CSV:
+- **style**: from the folder name each image sits in (`classes.csv` doesn't
+  have a style column at all, and `wclasses.csv`'s style codes have no
+  shipped name lookup — the folder name is simply the ground truth).
+- **artist**: from `classes.csv`'s `artist` column, which holds real names
+  (`wclasses.csv`'s `artist` column is an integer code with no lookup).
+- **genre**: see below — this one has a real wrinkle worth knowing about.
+
+### The genre-labeling wrinkle
+
+`classes.csv`'s `genre` field is a stringified list of WikiArt genre tags
+per artwork, e.g. `"['Portrait', 'Still Life']"`. In practice, **97.5% of
+rows just repeat the style name** as the "genre" (not a real, distinct
+tag) — WikiArt's own tagging falls back to this when no finer genre was
+ever assigned to a piece.
+
+`wclasses.csv`'s numeric genre codes, by contrast, line up with the
+well-documented 10-class ArtGAN/WikiArt genre taxonomy (Abstract Painting,
+Cityscape, Genre Painting, Illustration, Landscape, Nude Painting,
+Portrait, Religious Painting, Sketch and Study, Still Life) plus an
+"Unknown Genre" bucket — confirmed both by the published class list and by
+strong internal consistency (e.g. the code dominated by Cubism/Synthetic
+Cubism artworks maps cleanly to "Still Life," a well-known real
+association; the code dominated by Art Nouveau maps to "Illustration,"
+likewise real).
+
+So `data_prep.py` uses `wclasses.csv`'s numeric codes (mapped to these real
+names, matched by sorted position rather than a hardcoded offset, so it
+stays robust to minor variation) as the primary genre source, falling back
+to `classes.csv`'s text tag only for the handful of images that have a
+genuinely distinct tag there but no `wclasses.csv` entry. Images with
+neither are left blank for genre — they still have usable style/artist
+labels, they just won't be part of the genre task.
 
 ## Step 0 — Inspect your data first
 
@@ -53,18 +85,21 @@ This prints:
 - A sample of image filenames and path depth
 
 **Paste that output back to Claude if the pipeline errors out.**
-`data_prep.py` tries three layouts, in this priority order:
+`data_prep.py` tries layouts in this priority order:
 
-1. **steubk/wikiart-style per-task CSVs** (a variant seen on some mirrors of
-   this archive): `<task>_train.csv` / `<task>_val.csv` files, each row
-   `path,class_index` with no header, plus a `<task>_class.txt`-style lookup
-   mapping index to class name.
-2. **A single unified metadata CSV** — this is what the actual
-   steubk/wikiart download uses (`wclasses.csv`, with `classes.csv` as a
-   sibling that's missing the style column). When more than one such CSV
-   exists, `data_prep.py` picks whichever one covers the most of
-   path/artist/style/genre rather than an arbitrary one.
-3. **Folder-per-style only** (e.g. the ipythonx Kaggle mirror, no CSV at
+1. **Per-task class-index CSVs** (a variant seen on some mirrors of this
+   archive, not the actual steubk/wikiart download): `<task>_train.csv` /
+   `<task>_val.csv` files, each row `path,class_index` with no header, plus
+   a `<task>_class.txt`-style lookup mapping index to class name.
+2. **The confirmed steubk/wikiart layout** — folder-per-style images plus
+   a `classes.csv`-style metadata file with real artist names and a
+   stringified genre-tag list, joined by its filename column. Style comes
+   from the folder name; artist and genre are described in detail above
+   (see "The genre-labeling wrinkle").
+3. **A single unified metadata CSV** with recognizable column names — for
+   other mirrors that ship one well-formed CSV with real style/artist/
+   genre text directly (not this dataset, but kept as a fallback).
+4. **Folder-per-style only** (e.g. the ipythonx Kaggle mirror, no CSV at
    all): images live in `root/<Style>/<artist-name_title-of-work>.jpg`,
    artist is parsed from the filename, and genre/year aren't recoverable.
 

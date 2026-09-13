@@ -1,0 +1,122 @@
+true_label,predicted_label,count
+Abstract Painting,Abstract Painting,574
+Abstract Painting,Cityscape,3
+Abstract Painting,Genre Painting,8
+Abstract Painting,Illustration,6
+Abstract Painting,Landscape,15
+Abstract Painting,Nude Painting,2
+Abstract Painting,Portrait,0
+Abstract Painting,Religious Painting,7
+Abstract Painting,Sketch and Study,8
+Abstract Painting,Still Life,11
+Abstract Painting,Unknown Genre,86
+Cityscape,Abstract Painting,2
+Cityscape,Cityscape,462
+Cityscape,Genre Painting,43
+Cityscape,Illustration,6
+Cityscape,Landscape,91
+Cityscape,Nude Painting,0
+Cityscape,Portrait,0
+Cityscape,Religious Painting,3
+Cityscape,Sketch and Study,9
+Cityscape,Still Life,4
+Cityscape,Unknown Genre,61
+Genre Painting,Abstract Painting,4
+Genre Painting,Cityscape,26
+Genre Painting,Genre Painting,928
+Genre Painting,Illustration,39
+Genre Painting,Landscape,80
+Genre Painting,Nude Painting,31
+Genre Painting,Portrait,126
+Genre Painting,Religious Painting,99
+Genre Painting,Sketch and Study,50
+Genre Painting,Still Life,21
+Genre Painting,Unknown Genre,182
+Illustration,Abstract Painting,1
+Illustration,Cityscape,2
+Illustration,Genre Painting,20
+Illustration,Illustration,185
+Illustration,Landscape,5
+Illustration,Nude Painting,2
+Illustration,Portrait,6
+Illustration,Religious Painting,17
+Illustration,Sketch and Study,5
+Illustration,Still Life,2
+Illustration,Unknown Genre,36
+Landscape,Abstract Painting,7
+Landscape,Cityscape,77
+Landscape,Genre Painting,65
+Landscape,Illustration,12
+Landscape,Landscape,1592
+Landscape,Nude Painting,1
+Landscape,Portrait,2
+Landscape,Religious Painting,17
+Landscape,Sketch and Study,41
+Landscape,Still Life,12
+Landscape,Unknown Genre,146
+Nude Painting,Abstract Painting,2
+Nude Painting,Cityscape,0
+Nude Painting,Genre Painting,32
+Nude Painting,Illustration,6
+Nude Painting,Landscape,2
+Nude Painting,Nude Painting,169
+Nude Painting,Portrait,15
+Nude Painting,Religious Painting,11
+Nude Painting,Sketch and Study,24
+Nude Painting,Still Life,2
+Nude Painting,Unknown Genre,22
+Portrait,Abstract Painting,7
+Portrait,Cityscape,5
+Portrait,Genre Painting,166
+Portrait,Illustration,15
+Portrait,Landscape,2
+Portrait,Nude Painting,26
+Portrait,Portrait,1552
+Portrait,Religious Painting,72
+Portrait,Sketch and Study,69
+Portrait,Still Life,10
+Portrait,Unknown Genre,170
+Religious Painting,Abstract Painting,3
+Religious Painting,Cityscape,4
+Religious Painting,Genre Painting,74
+Religious Painting,Illustration,22
+Religious Painting,Landscape,8
+Religious Painting,Nude Painting,7
+Religious Painting,Portrait,38
+Religious Painting,Religious Painting,725
+Religious Painting,Sketch and Study,17
+Religious Painting,Still Life,3
+Religious Painting,Unknown Genre,74
+Sketch and Study,Abstract Painting,5
+Sketch and Study,Cityscape,7
+Sketch and Study,Genre Painting,35
+Sketch and Study,Illustration,17
+Sketch and Study,Landscape,18
+Sketch and Study,Nude Painting,10
+Sketch and Study,Portrait,39
+Sketch and Study,Religious Painting,26
+Sketch and Study,Sketch and Study,386
+Sketch and Study,Still Life,6
+Sketch and Study,Unknown Genre,38
+Still Life,Abstract Painting,6
+Still Life,Cityscape,0
+Still Life,Genre Painting,11
+Still Life,Illustration,1
+Still Life,Landscape,1
+Still Life,Nude Painting,2
+Still Life,Portrait,2
+Still Life,Religious Painting,5
+Still Life,Sketch and Study,7
+Still Life,Still Life,302
+Still Life,Unknown Genre,75
+Unknown Genre,Abstract Painting,107
+Unknown Genre,Cityscape,55
+Unknown Genre,Genre Painting,259
+Unknown Genre,Illustration,102
+Unknown Genre,Landscape,172
+Unknown Genre,Nude Painting,33
+Unknown Genre,Portrait,227
+Unknown Genre,Religious Painting,222
+Unknown Genre,Sketch and Study,68
+Unknown Genre,Still Life,95
+Unknown Genre,Unknown Genre,1068
