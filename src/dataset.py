@@ -27,9 +27,15 @@ TASK_TO_COLUMN = {
 def get_transforms(train: bool):
     if train:
         return transforms.Compose([
-            transforms.Resize((config.IMAGE_SIZE, config.IMAGE_SIZE)),
+            # RandomResizedCrop (instead of a plain Resize) gives real scale/
+            # crop variation per epoch, which matters a lot for a dataset
+            # this size — a plain resize means the model sees each image in
+            # basically the same framing every epoch, which encourages
+            # memorization rather than generalization.
+            transforms.RandomResizedCrop(config.IMAGE_SIZE, scale=(0.7, 1.0)),
             transforms.RandomHorizontalFlip(),
-            transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
+            transforms.RandomRotation(degrees=5),
+            transforms.ColorJitter(brightness=0.15, contrast=0.15, saturation=0.15),
             transforms.ToTensor(),
             transforms.Normalize(config.IMAGENET_MEAN, config.IMAGENET_STD),
         ])

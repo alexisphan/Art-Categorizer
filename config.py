@@ -8,7 +8,11 @@ huggan/wikiart / ArtGAN "new WikiArt dataset"). It ships as:
   - images grouped in style folders, and
   - a set of per-task class-index CSVs (style/artist/genre train+val splits
     mapping image path -> integer class index) plus class-name lookup files.
-`data_prep.py` auto-detects the CSV layout; run --inspect first if your local copy looks different.
+Critically, this dataset has NO per-image date/year field anywhere, so the
+"era" task cannot be trained from it alone (see README "Known gaps"). It
+does, however, include genre labels, so GENRE replaces ERA as the third
+task by default for this dataset. `data_prep.py` auto-detects the CSV
+layout; run --inspect first if your local copy looks different.
 """
 
 # --- Image handling ---
@@ -52,7 +56,14 @@ BATCH_SIZE = 32
 NUM_WORKERS = 4
 LEARNING_RATE = 3e-4
 WEIGHT_DECAY = 1e-4
-DEFAULT_EPOCHS = 10
+DEFAULT_EPOCHS = 20         # cosine LR schedule anneals over the full run,
+                            # so more epochs than before + early stopping
+                            # (below) to cut it short once val_acc plateaus
+LABEL_SMOOTHING = 0.1       # soft-labels the loss; cheap regularizer that
+                            # tends to reduce the late-epoch val_acc dip
+                            # seen when training with a constant LR
+EARLY_STOP_PATIENCE = 4     # stop if val_acc hasn't improved in this many
+                            # epochs; set to 0 via --patience 0 to disable
 BACKBONE = "resnet50"      # see src/model.py for supported options
 
 # --- Paths ---

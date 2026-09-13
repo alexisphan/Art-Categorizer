@@ -65,6 +65,9 @@ def main():
     parser.add_argument("--batch-size", type=int, default=config.BATCH_SIZE)
     parser.add_argument("--lr", type=float, default=config.LEARNING_RATE)
     parser.add_argument("--backbone", default=config.BACKBONE)
+    parser.add_argument("--patience", type=int, default=config.EARLY_STOP_PATIENCE,
+                         help="Stop if val_acc hasn't improved for this many epochs "
+                              "(0 disables early stopping).")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -86,21 +89,29 @@ def main():
     model = build_model(args.backbone, num_classes=len(label_to_idx)).to(device)
 
     class_weights = compute_class_weights(train_df, label_col, label_to_idx, device)
-    criterion = nn.CrossEntropyLoss(weight=class_weights)
+    criterion = nn.CrossEntropyLoss(weight=class_weights, label_smoothing=config.LABEL_SMOOTHING)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=config.WEIGHT_DECAY)
+    # Cosine schedule: LR eases down to ~0 by the final epoch instead of
+    # staying constant. This is usually why the last couple epochs of a
+    # fixed-LR run make val_acc *worse* (as in the runs so far) — a high LR
+    # late in training keeps knocking the model out of a good minimum.
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
 
     Path(config.CHECKPOINT_DIR).mkdir(exist_ok=True)
     Path(config.LOG_DIR).mkdir(exist_ok=True)
     best_val_acc = 0.0
+    epochs_since_improvement = 0
     history = []  # one row per epoch, written to CSV for Tableau/plotting
 
     for epoch in range(1, args.epochs + 1):
         train_loss, train_acc = run_epoch(model, train_loader, criterion, optimizer, device, train=True)
         val_loss, val_acc = run_epoch(model, val_loader, criterion, optimizer, device, train=False)
+        scheduler.step()
 
         print(f"Epoch {epoch}/{args.epochs} | "
               f"train_loss={train_loss:.4f} train_acc={train_acc:.4f} | "
-              f"val_loss={val_loss:.4f} val_acc={val_acc:.4f}")
+              f"val_loss={val_loss:.4f} val_acc={val_acc:.4f} | "
+              f"lr={scheduler.get_last_lr()[0]:.2e}")
 
         history.append({
             "task": args.task, "epoch": epoch,
@@ -110,6 +121,7 @@ def main():
 
         if val_acc > best_val_acc:
             best_val_acc = val_acc
+            epochs_since_improvement = 0
             ckpt_path = Path(config.CHECKPOINT_DIR) / f"{args.task}_best.pt"
             torch.save({
                 "model_state": model.state_dict(),
@@ -118,6 +130,12 @@ def main():
                 "task": args.task,
             }, ckpt_path)
             print(f"  Saved new best checkpoint to {ckpt_path} (val_acc={val_acc:.4f})")
+        else:
+            epochs_since_improvement += 1
+            if args.patience and epochs_since_improvement >= args.patience:
+                print(f"  No val_acc improvement for {epochs_since_improvement} epochs "
+                      f"(patience={args.patience}); stopping early.")
+                break
 
     # Save test split for evaluate.py to use later, so eval matches this exact split.
     test_df.to_csv(f"{config.CHECKPOINT_DIR}/{args.task}_test_split.csv", index=False)
