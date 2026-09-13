@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Dataset (too large for git, and not yours to redistribute)
+wikiart_raw/
+
+# Generated data — reproducible via src/data_prep.py
+metadata.csv
+
+# Model checkpoints and logs (large binary files)
+checkpoints/
+logs/
+
+# Python cruft
+__pycache__/
+*.pyc
